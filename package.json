@@ -1,6 +1,6 @@
 {
   "name": "techradar-reboot",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
   "prepublishOnly": "npm run build",
   "type": "module",

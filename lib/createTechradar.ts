@@ -171,7 +171,7 @@ const createTechradar = (
       .attr("font-family", "Arial, Helvetica")
       .attr("font-size", "18px")
       .attr("font-weight", "bold")
-      .attr("fill", "currentColor")
+      .attr("fill", vizData.global.mainColor)
       .text(vizData.slices[sliceIndex].name);
 
 
@@ -188,7 +188,7 @@ const createTechradar = (
         .attr("font-family", "Arial, Helvetica")
         .attr("font-size", "12px")
         .attr("font-weight", "bold")
-          .attr("fill", "currentColor")
+        .attr("fill", vizData.rings[ringIndex].color)
         .attr("dx", counter % 2 === 0 ? leftCoords.x : rightCoords.x)
         .attr("dy", counter % 2 === 0 ? leftCoords.y : rightCoords.y)
         .text(vizData.rings[ringIndex].name);
@@ -207,7 +207,7 @@ const createTechradar = (
         .style("font-family", "Arial, Helvetica")
         .style("font-size", "11px")
         .attr("id", blip => `legendItem-${blip.blipIndex}`)
-        .attr("fill", vizData.global.mainColor)
+        .attr("fill", "currentColor")
         .attr("dx", counter % 2 === 0 ? leftCoords.x : rightCoords.x)
         .attr("dy", () => {
           const step = 15;
@@ -257,7 +257,7 @@ const createTechradar = (
     .text("▲ moved up     ▼ moved down")
     .attr("xml:space", "preserve")
     .style("font-family", "Arial, Helvetica")
-      .attr("fill", "currentColor")
+    .attr("fill", vizData.global.mainColor)
     .style("font-size", "10px");
 
   // Position techradar and labels
