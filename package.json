@@ -1,12 +1,11 @@
 {
-  "name": "@chrishrb/techradar",
-  "description": "Create your own technology radar, with flexibility to customize the radar, the quadrants and the rings.",
-  "version": "0.1.4",
+  "name": "techradar-reboot",
+  "version": "0.1.5",
   "private": false,
-  "prepublishOnly": "pnpm run build",
+  "prepublishOnly": "npm run build",
   "type": "module",
   "scripts": {
-    "ci": "pnpm install --frozen-lockfile",
+    "ci": "npm install --frozen-lockfile",
     "dev": "vite",
     "build": "tsc --p ./tsconfig-build.json && vite build",
     "build-page": "vite build --config vite.config.page.ts",
@@ -14,20 +13,11 @@
     "preview": "vite preview",
     "test": "vitest run"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chrishrb/techradar.git"
-  },
   "keywords": [
     "techradar",
     "technology-radar"
   ],
-  "author": "Christoph Herb <52382992+chrishrb@users.noreply.github.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/chrishrb/techradar/issues"
-  },
-  "homepage": "https://github.com/chrishrb/techradar#readme",
   "dependencies": {
     "d3": "7.8.5",
     "react": "18.2.0",
@@ -61,9 +51,7 @@
   ],
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
-  "packageManager": "pnpm@8.15.4",
   "engines": {
-    "node": ">=21",
-    "pnpm": ">=8"
+    "node": ">=18"
   }
 }
